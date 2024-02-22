@@ -78,6 +78,8 @@
 # Commands to run before anything
 [pre_commands]
 # "Emacs Snapshot" = "rm -rf ~/.emacs.d/elpa.bak && cp -rl ~/.emacs.d/elpa ~/.emacs.d/elpa.bak"
+"Neovim from source" = "python $DOTFILES/.config/topgrade/update-scripts/update_neovim.py"
+"Gitui from source" = "python $DOTFILES/.config/topgrade/update-scripts/update_gitui.py"
 
 
 # Commands to run after anything
