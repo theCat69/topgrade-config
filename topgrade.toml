@@ -78,9 +78,8 @@
 # Commands to run before anything
 [pre_commands]
 # "Emacs Snapshot" = "rm -rf ~/.emacs.d/elpa.bak && cp -rl ~/.emacs.d/elpa ~/.emacs.d/elpa.bak"
-"Neovim from source" = "python -c \"import os;script_loc=os.environ.get('DOTFILES')+'/.config/topgrade/update-scripts/update_neovim.py';os.system(script_loc)\""
-"Gitui from source" = "python -c \"import os;script_loc=os.environ.get('DOTFILES')+'/.config/topgrade/update-scripts/update_gitui.py';os.system(script_loc)\""
-
+"Neovim from source" = "python -c \"import os;import subprocess;script_loc=os.environ.get('DOTFILES')+'/.config/topgrade/update-scripts/update_neovim.py';subprocess.run(['python', script_loc])\""
+"Gitui from source" = "python -c \"import os;import subprocess;script_loc=os.environ.get('DOTFILES')+'/.config/topgrade/update-scripts/update_gitui.py';subprocess.run(['python', script_loc])\""
 
 # Commands to run after anything
 [post_commands]
