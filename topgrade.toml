@@ -91,7 +91,7 @@ disable = ["pnpm"]
 # "Custom command using interactive shell (unix)" = "-i vim_upgrade"
 "Neovim from source" = "python -c \"import os;import subprocess;script_loc=os.environ.get('DOTFILES')+'/.config/topgrade/update-scripts/update_neovim.py';subprocess.run(['python', script_loc])\""
 "Gitui from source" = "python -c \"import os;import subprocess;script_loc=os.environ.get('DOTFILES')+'/.config/topgrade/update-scripts/update_gitui.py';subprocess.run(['python', script_loc])\""
-"Neovim update mason lsp servers" = "nvim --headless -c 'autocmd User MasonUpdateAllComplete quitall' -c MasonUpdate -c MasonUpdateAll"
+# "Neovim update mason lsp servers" = "nvim --headless -c 'autocmd User MasonUpdateAllComplete quitall' -c MasonUpdate -c MasonUpdateAll"
 "Neovim update treesitter parsers" = "nvim --headless -c TSUpdateSync -c qa"
 
 [python]
