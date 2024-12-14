@@ -8,6 +8,7 @@ def build_neovim():
         subprocess.run(["cmake", "--build",  ".deps", "--config", "Release"])
         subprocess.run(["cmake", "-B",  "build", "-G" , "Ninja" , "-D", "CMAKE_INSTALL_PREFIX=C:\\nvim", "-D", "CMAKE_BUILD_TYPE=Release"])
         subprocess.run(["cmake", "--build",  "build", "--config", "Release"])
+        subprocess.run(["cmake", "--install", "build"])
     elif os.name == 'posix':
         subprocess.run(["make", "CMAKE_BUILD_TYPE=Release"])
         subprocess.run(["sudo", "make", "install"])
